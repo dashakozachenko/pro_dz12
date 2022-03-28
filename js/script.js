@@ -1,0 +1,85 @@
+"use strict";
+
+//1
+/*
+const x = 10;
+const y = 7;
+x > y ? alert ('x больше, чем y') : alert ('x не больше, чем y');
+ */
+
+//2
+/*
+const num = prompt('Введите число');
+if ( num % 2 === 0){
+    alert ( "Число " + num + " четное" );
+}else{
+    alert ( "Число " + num + " нечетное" );
+}
+ */
+
+//3
+/*
+let a = prompt ( 'Введите число' );
+let aLen;
+let num;
+if ( !(a === null || a.trim() === '' || isNaN( +a )) ){
+    a = a.trim();
+    aLen = a.length;
+    if ( a > 0){
+        num = 'положительное';
+    }else{
+        num = 'отрицательное';
+        --aLen;
+    }
+    switch (aLen){
+        case 1:
+            alert (`Число ${a} однозначное ${num}.`);
+            break;
+        case 2:
+            alert (`Число ${a} двузначное ${num}.`);
+            break;
+        case 3:
+            alert (`Число ${a} трехзначное ${num}.`);
+            break;
+        default:
+            alert (`Число ${a} многозначное ${num}.`);
+    }
+}else{
+    alert ('Вы ввели не число');
+}
+console.log(a.length);
+ */
+
+//4
+/*
+const firstNum = +prompt ( 'Введите первое число ' );
+const secondNum = +prompt ( 'Введите второе число ' );
+const thirdNum = +prompt ( 'Введите третье число' );
+if ( firstNum > secondNum && firstNum > thirdNum){
+    alert ( `Максимальное значение ${firstNum}` );
+}else{
+    if ( secondNum > thirdNum ){
+        alert ( `Максимальное значение ${secondNum}` );
+    }else{
+        alert ( `Максимальное значение ${thirdNum}` );
+    }
+}
+ */
+
+//5
+/*
+const a = +prompt ( 'Введите длину первой стороны треугольника.' );
+const b = +prompt ( 'Введите длину второй стороны треугольника. ' );
+const c = +prompt ( 'Введите длину третьей стороны треугольника.' );
+
+if( a > 0 && b > 0 && c > 0)
+{
+    if( (a + b > c) && (a + c > b) && (b + c > a) ){
+        alert (`Треугольник с такими сторонами: ${a}, ${b}, ${c} может сущестовать.`);
+    }else{
+        alert (`Треугольник с такими сторонами: ${a}, ${b}, ${c} не может сущестовать.`);
+    }
+}else{
+    alert ('Сторона треугольника не может быть < 0 !');
+}
+ */
